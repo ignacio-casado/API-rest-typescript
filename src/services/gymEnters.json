@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "jorge lopez",
+        "age": 34,
+        "payment": true,
+        "process": "chest"
+    },
+    {
+        "id": 2,
+        "name": "jorge lopez 2",
+        "age": 35,
+        "payment": true,
+        "process": "legs"
+    },
+    {
+        "id": 3,
+        "name": "jorgina lopez ",
+        "age": 23,
+        "payment": false,
+        "process": "back"
+    },
+    {
+        "id": 4,
+        "name": "jorgina lopez 2 ",
+        "age": 53,
+        "payment": true,
+        "process": "shoulders"
+    }
+
+    
+
+]
