@@ -17,16 +17,10 @@ router.get('/:id', (req, res)=>{
 
 router.post('/', (req, res)=>{
     try{
-        const {name, age, payment, process} = req.body
-
-        const addNewGymEntry = gymServices.postEntries({
-            name,
-            age,
-            payment,
-            process
-        }
-            
-        )
+      
+        const newGymEntry = toNewGymEntry(req.body)
+        
+        const addNewGymEntry = gymServices.postEntries(newGymEntry)
         res.json(addNewGymEntry)
     }catch{
         res.status(400)
