@@ -1,4 +1,4 @@
-export type process = 'chest' | 'shoulders' | 'back' | 'legs'
+export type Process = 'chest' | 'shoulders' | 'back' | 'legs'
 
 export interface gymEnters {
     id: number,
@@ -8,3 +8,6 @@ export interface gymEnters {
     process: process
 
 }
+
+export type omitEntry = Omit<gymEnters, 'age'>
+export type gymEntry = Omit<gymEnters, 'id'>
