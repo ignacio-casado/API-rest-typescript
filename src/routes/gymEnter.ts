@@ -18,7 +18,7 @@ router.get('/:id', (req, res)=>{
 
 router.post('/', (req, res)=>{
     try{
-      
+
         const newGymEntry = toNewGymEntry(req.body)
         
         const addNewGymEntry = gymServices.postEntries(newGymEntry)
