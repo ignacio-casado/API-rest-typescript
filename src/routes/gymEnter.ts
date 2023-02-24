@@ -1,5 +1,6 @@
 import  express  from "express";
 import * as gymServices from "../services/gymServices"
+import toNewGymEntry from "../utils/utils";
 //routes
 const router = express.Router()
 
